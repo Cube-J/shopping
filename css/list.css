@@ -1,0 +1,62 @@
+header .sk {
+    position: absolute;
+    top: 50%;
+    left: 190px;
+    margin-top: -13px;
+    width: 71px;
+    height: 26px;
+    background: url(../images/sk.png) no-repeat right;
+    border-left: 1px solid rgb(200, 21, 35);
+}
+nav {
+    height: 47px;
+    line-height: 47px;
+}
+nav li {
+    float: left;
+    font-size: 14px;
+}
+nav li.sk_list {
+    font-size: 16px;
+    font-weight: 700;
+}
+nav li a {
+    display: block;
+    height: 47px;
+    padding: 0 20px;
+}
+nav li.sk_list a {
+    padding: 0 30px;
+    color: black;
+}
+nav li:last-of-type a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    margin-left: 3px;
+}
+.sk_container .sk_head {
+    height: 120px;
+}
+.sk_container .sk_head a {
+    display: block;
+    height: 100%;
+    background: url(../upload/bg_03.png) no-repeat;
+}
+.sk_container .sk_body li {
+    float: left;
+    width: 290px;
+    height: 458px;
+    margin-right: 13px;
+}
+.sk_container .sk_body li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../upload/list.jpg) no-repeat center;
+}
+.sk_container .sk_body li a:hover {
+    border: 1px solid rgb(200, 21, 35);
+}
+.sk_container .sk_body li:nth-of-type(4n) {
+    margin-right: 0;
+}

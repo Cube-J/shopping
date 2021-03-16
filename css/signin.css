@@ -1,0 +1,146 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    height: 84px;
+    padding-top: 18px;
+    border-bottom: 2px solid rgb(200, 21, 35);
+}
+header .logo {
+    display: block;
+    width: 171px;
+    height: 61px;
+}
+.registerarea {
+    height: 522px;
+    margin-top: 20px;
+    border: 1px solid rgb(204, 204, 204);
+}
+.registerarea h3 {
+    position: relative;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 10px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    background-color: rgb(236, 236, 236);
+    font-size: 18px;
+    font-weight: 400;
+}
+.registerarea h3 .login {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -21px;
+    font-size: 14px;
+}
+.registerarea h3 .login a {
+    color: #c81523;
+}
+.registerarea form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+.registerarea form li {
+    width: 600px;
+    margin-bottom: 20px;
+}
+.registerarea form li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+.registerarea form li input {
+    width: 242px;
+    height: 37px;
+    border: 1px solid rgb(204, 204, 204);
+}
+.registerarea form li .error {
+    color: #c81523;
+}
+.registerarea form li span i.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.registerarea form li .error .error_icon {
+    background: url(../images/error.png) no-repeat;
+}
+.registerarea form li .seccess {
+    color: green;
+}
+.registerarea form li .success .success_icon {
+    background: url(../images/success.png) no-repeat;
+}
+.registerarea form .safe {
+    padding-left: 170px;
+    font-size: 12px;
+}
+.registerarea form .safe em {
+    display: inline-block;
+    width: 36px;
+    text-align: center;
+    color: white;
+}
+.registerarea form .safe em.low {
+    background-color: red;
+}
+.registerarea form .safe em.medium {
+    background-color: green;
+}
+.registerarea form .safe em.high {
+    background-color: orange;
+}
+.registerarea form .agree {
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+.registerarea form .agree label {
+    display: inline;
+    cursor: pointer;
+}
+.registerarea form .agree input {
+    width: 13px;
+    height: 13px;
+    margin-top: -3px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.registerarea form .agree a {
+    color: #1ba1e6;
+}
+.registerarea form .submit {
+    padding-top: 30px;
+    padding-left: 120px;
+}
+.registerarea form .submit button {
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    color: white;
+}
+footer {
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+footer ul {
+    margin-bottom: 10px;
+}
+footer ul li {
+    display: inline-block;
+}
+footer ul li::after {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: rgb(151, 102, 127);
+    margin: -1px 5px 0;
+    vertical-align: middle;
+}
+footer ul li:last-of-type::after {
+    content: none;
+}

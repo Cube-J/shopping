@@ -1,0 +1,342 @@
+/* 新闻快报+轮播图部分 */
+.main {
+    position: relative;
+    height: 455px;
+    margin-top: 10px;
+    margin-left: 220px;
+}
+/* .main .focus li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 721px;
+    height: 455px;
+    background: url(../upload/focus1.png) no-repeat;
+} */
+/* 轮播图slideshow */
+.slideShow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 730px;
+    height: 454px;
+    overflow: hidden;
+}
+
+.slideShow .slides {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slideShow .slides .slide {
+    float: left;
+}
+
+.slideShow .arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 26px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .3);
+    /* css3新特性。往-y方向移动，距离为自身高度的50%。与top：50%配合实现垂直居中 */
+    transform: translateY(-50%);
+    font-family: 'icomoon';
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.slideShow:hover .arrow {
+    display: block;
+}
+
+.slideShow .arrowLeft {
+    left: 0;
+    border-radius: 0 50% 50% 0;
+}
+
+.slideShow .arrowRight {
+    right: 0;
+    border-radius: 50% 0 0 50%;
+}
+
+.slideShow .sliderIndicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    /* width: 90px; */
+    height: 12px;
+    padding: 0 5px;
+    line-height: 12px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    transform: translateX(-50%);
+}
+
+.slideShow .sliderIndicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .4);
+    cursor: pointer;
+}
+
+.slideShow .sliderIndicators .selected {
+    background-color: rgba(255, 255, 255);
+}
+/* 新闻快报部分 */
+.main aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 455px;
+}
+.main aside.newsflash .newshead {
+    height: 33px;
+    border: 1px solid rgb(228, 228, 228);
+}
+.main aside.newsflash .newshead h5 {
+    float: left;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 32px;
+}
+.main aside.newsflash .newshead a {
+    float: right;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 32px;
+}
+.main aside.newsflash .newshead a::after {
+    content: '\e920';
+    font-family: 'icomoon';
+}
+.main aside.newsflash .newsbody {
+    height: 125px;
+    padding: 5px 15px 0;
+    font-size: 12px;
+    border: 1px solid rgb(228, 228, 228);
+    border-top: none;
+}
+.main aside.newsflash .newsbody li {
+    height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.main aside.newsflash .newsbody li strong {
+    margin-right: 3px;
+}
+.main aside.newsflash .lifeservice {
+    width: 250px;
+    height: 209px;
+    border: 1px solid rgb(228, 228, 228);
+    border-top: none;
+}
+.main aside.newsflash .lifeservice li {
+    float: left;
+    margin-top: -1px;
+    margin-left: -1px;
+    width: 63px;
+    height: 71px;
+    border: 1px solid rgb(228, 228, 228);
+    border-right: none;
+    border-bottom: none;
+}
+.main aside.newsflash .lifeservice li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.main aside.newsflash .lifeservice li a .pic {
+    width: 24px;
+    height: 28px;
+    margin: 12px auto 3px;
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+.main aside.newsflash .lifeservice li:first-of-type a .pic:first-of-type {
+    background: url(../images/icons.png) no-repeat -79px -17px;
+}
+.main aside.newsflash .lifeservice li:nth-of-type(2) a .pic:first-of-type {
+    background: url(../images/icons.png) no-repeat -141px -17px;
+}
+.main aside.newsflash .bargain {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    height: 75px;
+    background: url(../upload/bargain.png) no-repeat;
+}
+/* 今日推荐 */
+.recommend {
+    position: relative;
+    height: 163px;
+    margin-top: 10px;
+}
+.recommend .recommend_head {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    float: left;
+    width: 205px;
+    height: 100%;
+    background: url(../images/recom.png) no-repeat rgb(92, 82, 81) center;
+}
+.recommend .recommend_body {
+    /* position: absolute;
+    top: 0;
+    left: 205px; */
+    float: left;
+    width: calc(1200px-205px);
+    height: 100%;
+}
+.recommend .recommend_body li {
+    float: left;
+    position: relative;
+}
+.recommend .recommend_body li img {
+    transition: all .3s;
+}
+.recommend .recommend_body li img:hover {
+    opacity: 0.8;
+}
+.recommend .recommend_body li:nth-of-type(-n+3)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -75px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+/* 楼层制作 */
+.floor {
+    margin-top: 20px;
+}
+.floor>div {
+    height: 391px;
+    margin-bottom: 30px;
+}
+.floor>div .head {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+.floor>div .head h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+.floor>div .head ul {
+    float: right;
+    height: 100%;
+    margin-right: 15px;
+    font-size: 12px;
+}
+.floor>div .head ul li {
+    float: left;
+}
+.floor>div .head ul li.spacer {
+    margin: 10px 15px;
+    width: 1px;
+    height: 12px;
+    background-color: rgb(151, 102, 151);
+}
+.floor>div .head ul li:first-of-type a {
+    color: #c81623;
+}
+.floor>div .body {
+    height: 361px;
+}
+.floor>div .body li.items {
+    float: left;
+    height: 100%;
+}
+.floor>div .body li.items:first-of-type { 
+    width: 210px;
+    padding-left: 10px;
+    background-color: rgb(249, 249, 249);
+}
+.floor>div .body li.items:first-of-type .links li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    margin-right: 10px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    text-align: center;
+    line-height: 34px;
+}  
+.floor>div .body li.items:nth-of-type(3) {
+    width: 220px;
+    border-right: 1px solid rgb(204, 204, 204);
+}
+.floor>div .body li.items:nth-of-type(3) .pic1::after,
+.floor>div .body li.items:nth-of-type(5) .pic1::after {
+    content: "";
+    display: block;
+    width: 220px;
+    height: 1px;
+    background-color: rgb(204, 204, 204);
+}
+.floor>div .body li.items:nth-of-type(5) {
+    width: 220px;
+    border-left: 1px solid rgb(204, 204, 204);
+}
+.floor>div .body li.items img {
+    transition: all .3s;
+}
+.floor>div .body li.items img:hover {
+    opacity: 0.8;
+}
+
+/* 给链接图片添加过渡效果 */
+.floor>div .body li.items>img {
+    transition: all .3s;
+}
+.floor>div .body li.items>img:hover {
+    margin-left: 8px;
+}
+/* 侧边栏 */
+aside.sideBar {
+    position: fixed;
+    /* top: 200px; */
+    left: 50%;
+    margin-left: -690px;
+    background-color: white;
+}
+aside.sideBar .floorGuide li {
+    width: 66px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+aside.sideBar .floorGuide li.current {
+    background-color: #c81623;
+    color: white;
+}
+aside.sideBar .returnTop {
+    width: 66px;
+    height: 40px;
+    background-color: rgb(122, 110, 110);
+    font-family: 'icomoon';
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+
+}
