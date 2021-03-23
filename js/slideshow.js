@@ -209,5 +209,7 @@ function indicatorChange(index) {
 
 // 设置自动播放
 let timer = setInterval(function () {
-    arrowRight.click();
+    if(flag) {
+        arrowRight.click();
+    }
 }, 3000);
